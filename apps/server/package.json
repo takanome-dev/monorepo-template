@@ -1,0 +1,11 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {},
+  "dependencies": {},
+  "engines": {
+    "node": "^14.15 || ^16.13"
+  },
+  "devDependencies": {}
+}

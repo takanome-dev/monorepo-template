@@ -1,0 +1,37 @@
+name: Documentation
+description: Request an update to invalid/outdated documentation
+title: '[DOCS] - <description>'
+labels: ['🚦 status: awaiting triage']
+body:
+  - type: markdown
+    attributes:
+      value: '# Incorrect Documentation'
+  - type: textarea
+    id: doc_error_description
+    attributes:
+      label: What is incorrect in the documentation?
+      description: Please explain the information that is incorrect in the documentation, and why you think it needs to be updated.
+    validations:
+      required: true
+  - type: textarea
+    id: expected_information
+    attributes:
+      label: What should that text say?
+      description: Provide the information that the documentation should actually contain instead of the incorrect content.
+    validations:
+      required: true
+  - type: textarea
+    id: extra_info
+    attributes:
+      label: Additional information
+      description: Is there anything else we should know about this inaccuracy?
+    validations:
+      required: false
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://github.com/TAKANOME-DEV/click-to-buy/blob/master/CODE_OF_CONDUCT.md)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true

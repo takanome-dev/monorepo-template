@@ -1,0 +1,12 @@
+# A DeepSource analyzer inspects and analyzes source code in a repository
+# to raise issues and track metrics.
+# Learn more: https://deepsource.io/docs/concepts
+
+version = 1
+
+[[analyzers]]
+name = "javascript"
+enabled = true
+
+  [analyzers.meta]
+  plugins = ["react"]

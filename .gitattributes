@@ -1,0 +1,25 @@
+# Why should we use .gitattributes file, see https://dev.to/deadlybyte/please-add-gitattributes-to-your-git-repository-1jld
+
+# Common settings that generally should always be used with your language specific settings
+# See: https://github.com/alexkaratarakis/gitattributes/blob/master/Common.gitattributes
+
+# Documents
+*.md text diff=markdown
+
+# Auto detect text files and perform LF normalization
+* text=auto
+*.ts text
+*.test.ts text
+
+# Graphics
+*.png binary
+*.jpg binary
+
+# Serialisation
+*.json     text
+*.toml     text
+*.yml      text
+
+# Exclude files from exporting
+.gitattributes export-ignore
+.gitignore     export-ignore
