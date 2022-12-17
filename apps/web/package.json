@@ -16,7 +16,7 @@
   },
   "devDependencies": {
     "eslint-config-custom": "workspace:*",
-    "eslint": "8.29.0",
+    "eslint": "8.30.0",
     "next-transpile-modules": "10.0.0",
     "tsconfig": "workspace:*",
     "@types/node": "^17.0.12",
