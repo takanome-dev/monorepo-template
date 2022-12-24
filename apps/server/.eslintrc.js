@@ -1,9 +1,14 @@
 module.exports = {
-  ...require('eslint-config-custom/eslint-server'),
+  ...require('eslint-config-custom/eslint-server'),  
   parserOptions: {
-    root: true,
-    tsconfigRootDir: __dirname,
-    project: ['./tsconfig.json'],
+    project: 'tsconfig.json',
+    tsconfigRootDir : __dirname, 
+    sourceType: 'module',
+  },
+  root: true,
+  env: {
+    node: true,
+    jest: true,
   },
   ignorePatterns: ['**/*.js', 'node_modules', '.turbo', 'dist'],
 };
