@@ -27,7 +27,7 @@ importers:
 
   apps/web:
     specifiers:
-      '@types/node': ^17.0.12
+      '@types/node': ^18.0.0
       '@types/react': 18.0.26
       eslint: 8.29.0
       eslint-config-custom: workspace:*
@@ -44,7 +44,7 @@ importers:
       react-dom: 18.2.0_react@18.2.0
       ui: link:../../packages/ui
     devDependencies:
-      '@types/node': 17.0.45
+      '@types/node': 18.11.10
       '@types/react': 18.0.26
       eslint: 8.29.0
       eslint-config-custom: link:../../packages/eslint-config-custom
@@ -313,8 +313,8 @@ packages:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
     dev: false
 
-  /@types/node/17.0.45:
-    resolution: {integrity: sha512-w+tIMs3rq2afQdsPJlODhoUEKzFP1ayaoyl1CcnwtIlsVe7K7bA1NGm4s3PraqTLlXnbIN84zuBlxBWo1u9BLw==}
+  /@types/node/18.11.10:
+    resolution: {integrity: sha512-juG3RWMBOqcOuXC643OAdSA525V44cVgGV6dUDuiFtss+8Fk5x1hI93Rsld43VeJVIeqlP9I7Fn9/qaVqoEAuQ==}
     dev: true
 
   /@types/prop-types/15.7.5:
