@@ -1,3 +1,7 @@
+# ----------------------------- INFO ---------------------------------
+  # ! You may not need this file if you are not using DeepSource.
+# ----------------------------- INFO ---------------------------------
+
 # A DeepSource analyzer inspects and analyzes source code in a repository
 # to raise issues and track metrics.
 # Learn more: https://deepsource.io/docs/concepts
