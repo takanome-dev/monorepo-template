@@ -17,7 +17,10 @@ module.exports = {
   rules: {
     "@typescript-eslint/ban-ts-comment": "off",
     "@typescript-eslint/consistent-type-imports": "warn",
-    "@typescript-eslint/no-explicit-any": "warn",
+    '@typescript-eslint/explicit-function-return-type': 'off',
+    '@typescript-eslint/explicit-module-boundary-types': 'off',
+    '@typescript-eslint/interface-name-prefix': 'off',
+    '@typescript-eslint/no-explicit-any': 'off',
     "@typescript-eslint/no-non-null-assertion": "off",
     "@typescript-eslint/restrict-template-expressions": "off",
     "arrow-body-style": "error",
