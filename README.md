@@ -8,7 +8,7 @@ This turborepo uses [pnpm](https://pnpm.io) as a packages manager. It includes t
 
 ### Apps and Packages
 
-- `web`: a [Next.js](https://nextjs.org) app
+- `web`: a [Next.js](https://nextjs.org) app using TypeScript and Tailwind CSS
 - `server`: a [Nestjs](https://docs.nestjs.com) app
 - `ui`: a stub React component library shared between applications
 - `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
