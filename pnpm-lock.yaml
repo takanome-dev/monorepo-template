@@ -49,7 +49,7 @@ importers:
       ts-jest: 28.0.8
       ts-loader: ^9.2.3
       ts-node: ^10.0.0
-      tsconfig-paths: 4.1.1
+      tsconfig-paths: 4.1.2
       typescript: ^4.7.4
     dependencies:
       '@nestjs/common': 9.2.1_yzt46al3aifnexifjjdb4dxxja
@@ -78,7 +78,7 @@ importers:
       ts-jest: 28.0.8_bi2kohzqnxavgozw3csgny5hju
       ts-loader: 9.4.2_typescript@4.7.4
       ts-node: 10.9.1_u63w7keq6peppielgunimce3za
-      tsconfig-paths: 4.1.1
+      tsconfig-paths: 4.1.2
       typescript: 4.7.4
 
   apps/web:
@@ -6646,7 +6646,7 @@ packages:
     dependencies:
       chalk: 4.1.2
       enhanced-resolve: 5.10.0
-      tsconfig-paths: 4.1.1
+      tsconfig-paths: 4.1.2
     dev: true
 
   /tsconfig-paths/3.14.1:
@@ -6660,6 +6660,15 @@ packages:
 
   /tsconfig-paths/4.1.1:
     resolution: {integrity: sha512-VgPrtLKpRgEAJsMj5Q/I/mXouC6A/7eJ/X4Nuk6o0cRPwBtznYxTCU4FodbexbzH9somBPEXYi0ZkUViUpJ21Q==}
+    engines: {node: '>=6'}
+    dependencies:
+      json5: 2.2.2
+      minimist: 1.2.6
+      strip-bom: 3.0.0
+    dev: true
+
+  /tsconfig-paths/4.1.2:
+    resolution: {integrity: sha512-uhxiMgnXQp1IR622dUXI+9Ehnws7i/y6xvpZB9IbUVOPy0muvdvgXeZOn88UcGPiT98Vp3rJPTa8bFoalZ3Qhw==}
     engines: {node: '>=6'}
     dependencies:
       json5: 2.2.2
