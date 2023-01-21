@@ -127,13 +127,13 @@ importers:
       eslint-import-resolver-typescript: ^3.0.0
       eslint-plugin-import: 2.26.0
       eslint-plugin-prettier: ^4.0.0
-      eslint-plugin-react: 7.32.0
+      eslint-plugin-react: 7.32.1
       eslint-plugin-react-hooks: ^4.5.0
     dependencies:
       '@typescript-eslint/eslint-plugin': 5.43.0_6csv3uv6j3wvxrzaqv7ujfvgpm
       '@typescript-eslint/parser': 5.29.0_eslint@8.30.0
       eslint: 8.30.0
-      eslint-config-airbnb: 19.0.4_k5oncnyhxbwnfibcs2xvinszh4
+      eslint-config-airbnb: 19.0.4_bqglx5pfi4bp6y7cyrfnbjzglm
       eslint-config-airbnb-base: 15.0.0_2lbwmhbr7bncddqbzzpg77o75m
       eslint-config-airbnb-typescript: 17.0.0_4wkrw4mbgd47s4hh5nurxomiqy
       eslint-config-next: 13.1.1_eslint@8.30.0
@@ -141,7 +141,7 @@ importers:
       eslint-import-resolver-typescript: 3.5.2_2lbwmhbr7bncddqbzzpg77o75m
       eslint-plugin-import: 2.26.0_ecmgvvaphqptz7jyczi7zg5xca
       eslint-plugin-prettier: 4.2.1_kynsmr3znvj2ay4dev4nkdhgve
-      eslint-plugin-react: 7.32.0_eslint@8.30.0
+      eslint-plugin-react: 7.32.1_eslint@8.30.0
       eslint-plugin-react-hooks: 4.6.0_eslint@8.30.0
 
   packages/tsconfig:
@@ -2434,7 +2434,7 @@ packages:
     resolution: {integrity: sha512-7O+FbCihrB5WGbFYesctwmTKae6rOiIzmz1icreWJ+0aA7LJfuqhEso2T9ncpcFtzMQtzXf2QGGueWJGTYsqrA==}
     dependencies:
       function-bind: 1.1.1
-      get-intrinsic: 1.1.2
+      get-intrinsic: 1.1.3
 
   /callsites/3.1.0:
     resolution: {integrity: sha512-P8BjAsXvZS+VIDUI11hHCQEv74YT67YUi5JJFNWIqL235sBmjX4+qx9Muvls5ivyNENctx46xQLQ3aTuE7ssaQ==}
@@ -3057,7 +3057,7 @@ packages:
       eslint-plugin-import: 2.26.0_ecmgvvaphqptz7jyczi7zg5xca
     dev: false
 
-  /eslint-config-airbnb/19.0.4_k5oncnyhxbwnfibcs2xvinszh4:
+  /eslint-config-airbnb/19.0.4_bqglx5pfi4bp6y7cyrfnbjzglm:
     resolution: {integrity: sha512-T75QYQVQX57jiNgpF9r1KegMICE94VYwoFQyMGhrvc+lB8YF2E/M/PYDaQe1AJcWaEgqLE+ErXV1Og/+6Vyzew==}
     engines: {node: ^10.12.0 || ^12.22.0 || ^14.17.0 || >=16.0.0}
     peerDependencies:
@@ -3070,7 +3070,7 @@ packages:
       eslint: 8.30.0
       eslint-config-airbnb-base: 15.0.0_2lbwmhbr7bncddqbzzpg77o75m
       eslint-plugin-import: 2.26.0_ecmgvvaphqptz7jyczi7zg5xca
-      eslint-plugin-react: 7.32.0_eslint@8.30.0
+      eslint-plugin-react: 7.32.1_eslint@8.30.0
       eslint-plugin-react-hooks: 4.6.0_eslint@8.30.0
       object.assign: 4.1.2
       object.entries: 1.1.5
@@ -3093,7 +3093,7 @@ packages:
       eslint-import-resolver-typescript: 3.5.2_2lbwmhbr7bncddqbzzpg77o75m
       eslint-plugin-import: 2.26.0_p6eswnf3xl3aaa2djfyukgz5eq
       eslint-plugin-jsx-a11y: 6.5.1_eslint@8.30.0
-      eslint-plugin-react: 7.32.0_eslint@8.30.0
+      eslint-plugin-react: 7.32.1_eslint@8.30.0
       eslint-plugin-react-hooks: 4.6.0_eslint@8.30.0
     transitivePeerDependencies:
       - eslint-import-resolver-webpack
@@ -3316,8 +3316,8 @@ packages:
       eslint: 8.30.0
     dev: false
 
-  /eslint-plugin-react/7.32.0_eslint@8.30.0:
-    resolution: {integrity: sha512-vSBi1+SrPiLZCGvxpiZIa28fMEUaMjXtCplrvxcIxGzmFiYdsXQDwInEjuv5/i/2CTTxbkS87tE8lsQ0Qxinbw==}
+  /eslint-plugin-react/7.32.1_eslint@8.30.0:
+    resolution: {integrity: sha512-vOjdgyd0ZHBXNsmvU+785xY8Bfe57EFbTYYk8XrROzWpr9QBvpjITvAXt9xqcE6+8cjR/g1+mfumPToxsl1www==}
     engines: {node: '>=4'}
     peerDependencies:
       eslint: ^3 || ^4 || ^5 || ^6 || ^7 || ^8
@@ -3918,13 +3918,6 @@ packages:
     engines: {node: 6.* || 8.* || >= 10.*}
     dev: true
 
-  /get-intrinsic/1.1.2:
-    resolution: {integrity: sha512-Jfm3OyCxHh9DJyc28qGk+JmfkpO41A4XkneDSujN9MDXrm4oDKdHvndhZ2dN94+ERNfkYJWDclW6k2L/ZGHjXA==}
-    dependencies:
-      function-bind: 1.1.1
-      has: 1.0.3
-      has-symbols: 1.0.3
-
   /get-intrinsic/1.1.3:
     resolution: {integrity: sha512-QJVz1Tj7MS099PevUG5jvnt9tSkXN8K14dxQlikJuPt4uD9hHAHjLyLBiLR5zELelBdD9QNRAXZzsJx0WaDL9A==}
     dependencies:
@@ -4068,7 +4061,7 @@ packages:
   /has-property-descriptors/1.0.0:
     resolution: {integrity: sha512-62DVLZGoiEBDHQyqG4w9xCuZ7eJEwNmJRWw2VY84Oedb7WFcA27fiEVe8oUQx9hAUJ4ekurquucTGwsyO1XGdQ==}
     dependencies:
-      get-intrinsic: 1.1.2
+      get-intrinsic: 1.1.3
     dev: false
 
   /has-symbols/1.0.3:
