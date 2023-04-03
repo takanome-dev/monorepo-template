@@ -21,7 +21,7 @@
     "next": "13.2.4",
     "prettier": "latest",
     "turbo": "latest",
-    "typescript": "^4.7.4"
+    "typescript": "^5.0.0"
   },
   "engines": {
     "npm": ">=7.0.0",
