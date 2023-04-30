@@ -16,10 +16,12 @@
   "devDependencies": {
     "eslint": "^8.0.0",
     "eslint-config-custom": "workspace:*",
+    "eslint-config-custom-server": "workspace:*",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.2",
     "next": "13.3.1",
     "prettier": "latest",
+    "prettier-plugin-tailwindcss": "^0.1.11",
     "turbo": "latest",
     "typescript": "^5.0.0"
   },

@@ -1,5 +1,10 @@
 {
   "extends": "tsconfig/nextjs.json",
+  "compilerOptions": {
+    "target": "ES2015",
+    "noEmit": true,
+    "incremental": true
+  },
   "include": ["."],
   "exclude": ["dist", "build", "node_modules"]
 }

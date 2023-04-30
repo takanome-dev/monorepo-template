@@ -15,11 +15,10 @@ module.exports = {
     project: ['./tsconfig.json'],
   },
   rules: {
-    "@typescript-eslint/ban-ts-comment": "off",
-    "@typescript-eslint/consistent-type-imports": "warn",
-    '@typescript-eslint/explicit-function-return-type': 'off',
-    '@typescript-eslint/explicit-module-boundary-types': 'off',
-    '@typescript-eslint/interface-name-prefix': 'off',
+    "@typescript-eslint/consistent-type-imports": [
+      "error",
+      { prefer: "type-imports", fixStyle: "inline-type-imports" },
+    ],
     '@typescript-eslint/no-explicit-any': 'off',
     "@typescript-eslint/no-non-null-assertion": "off",
     "@typescript-eslint/restrict-template-expressions": "off",
@@ -58,7 +57,6 @@ module.exports = {
       }
     ],
     "import/prefer-default-export": "off",
-    "jsx-a11y/anchor-is-valid": "off",
     "keyword-spacing": "error",
     "max-nested-callbacks": ["error", { "max": 2 }],
     "max-statements-per-line": ["error", { "max": 2 }],
@@ -73,7 +71,7 @@ module.exports = {
       "error",
       { "max": 2, "maxEOF": 1, "maxBOF": 0 }
     ],
-    "no-nested-ternary": "warn",
+    "no-nested-ternary": "error",
     "no-shadow": ["error", { "allow": ["err", "resolve", "reject"] }],
     "no-trailing-spaces": ["error"],
     "no-var": "error",
@@ -102,4 +100,6 @@ module.exports = {
     "vars-on-top": "off",
     "yoda": "error"
   },
+  ignorePatterns: ['**/*.js', 'node_modules', '.turbo', 'dist'],
+  reportUnusedDisableDirectives: true,
 };
