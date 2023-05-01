@@ -1,10 +1,5 @@
 {
-  "extends": "tsconfig/nextjs.json",
-  "compilerOptions": {
-    "target": "ES2015",
-    "noEmit": true,
-    "incremental": true
-  },
-  "include": ["."],
+  "extends": "tsconfig/react-library.json",
+  "include": [".", "**/*.ts", "**/*.tsx"],
   "exclude": ["dist", "build", "node_modules"]
 }

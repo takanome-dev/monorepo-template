@@ -1,6 +1,7 @@
 {
   "name": "monorepo-template",
-  "version": "0.0.0",
+  "description": "Monorepo template with Next.js, NestJS, Tailwind CSS, Turbo, and Prettier",
+  "version": "1.0.0",
   "private": true,
   "workspaces": [
     "apps/*",
@@ -10,6 +11,7 @@
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
+    "clean": "turbo run clean",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "prepare": "husky install"
   },
