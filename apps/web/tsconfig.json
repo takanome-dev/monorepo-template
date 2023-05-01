@@ -2,8 +2,27 @@
   "extends": "tsconfig/nextjs.json",
   "compilerOptions": {
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "~/*": [
+        "./src/*"
+      ]
+    },
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
-  "include": ["src", "next-env.d.ts"],
-  "exclude": ["node_modules", ".next", ".turbo"]
+  "include": [
+    "src",
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    ".next",
+    ".turbo"
+  ]
 }
