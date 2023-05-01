@@ -1,0 +1,21 @@
+name: Assign Issue Action
+
+on:
+  schedule:
+    - cron: 0 0 * * *
+  issue_comment:
+    types: [created]
+  workflow_dispatch:
+
+jobs:
+  assign:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Assign the user or unassign stale assignments
+        uses: takanome-dev/assign-issue-action@v2.0.0
+        with:
+          github_token: '${{ secrets.GITHUB_TOKEN }}'
+          trigger: '.take' # you can change the default trigger to something else
+          # required_label: # if present, the issue must have this label to be assigned
+          # assigned_label: 📍 Assigned
+          # days_until_unassign: 7
