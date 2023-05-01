@@ -34,7 +34,6 @@
     "turbo": "latest",
     "typescript": "^5.0.0"
   },
-  "dependencies": {},
   "lint-staged": {
     "apps/**/*.{js,ts,jsx,tsx}": [
       "eslint --fix"
