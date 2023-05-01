@@ -12,9 +12,11 @@
   "license": "MIT",
   "scripts": {
     "build": "tsup",
+    "clean": "rm -rf .turbo node_modules",
     "dev": "tsup --watch",
     "check-types": "tsc --noEmit",
-    "lint": "eslint . --fix"
+    "lint": "eslint .",
+    "lint:fix": "pnpm lint --fix"
   },
   "peerDependencies": {
     "react": "^18.2.0"

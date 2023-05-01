@@ -1,0 +1,66 @@
+name: CI
+
+on:
+  pull_request:
+    branches: ['main']
+  workflow_dispatch:
+
+# You can leverage Vercel Remote Caching with Turbo to speed up your builds
+# @link https://turborepo.org/docs/core-concepts/remote-caching#remote-caching-on-vercel-builds
+env:
+  TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
+  TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
+
+jobs:
+  build-lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: '☁️ Checkout repo'
+        uses: actions/checkout@v3
+
+      - name: '🔧 Setup pnpm'
+        uses: pnpm/action-setup@v2.2.4
+
+      - name: '🔧 Setup Node 18'
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: '🔧 Get pnpm store directory'
+        id: pnpm-cache
+        run: |
+          echo "pnpm_cache_dir=$(pnpm store path)" >> $GITHUB_OUTPUT
+
+      - name: '🔧 Setup pnpm cache'
+        uses: actions/cache@v3
+        with:
+          path: ${{ steps.pnpm-cache.outputs.pnpm_cache_dir }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
+
+      - name: '📦 Install deps (with cache)'
+        run: pnpm install
+
+      # TODO: Free for all to find a better solution here.
+      - name: '🛠 Build, lint and type-check'
+        run: pnpm turbo build lint type-check
+
+      # - name: '🕵 Check workspaces'
+      #   run: pnpm manypkg check
+
+      - name: '📊 repository visualizer'
+        id: diagram
+        uses: githubocto/repo-visualizer@0.8.2
+        with:
+          excluded_paths: 'node_modules,build,.vercel,.github,.husky'
+          output_file: 'public/diagram.svg'
+          should_push: false
+          root_path: 'src/'
+
+      - name: '📊 visualizer artifacts'
+        uses: actions/upload-artifact@v2
+        with:
+          name: diagram
+          path: public/diagram.svg
