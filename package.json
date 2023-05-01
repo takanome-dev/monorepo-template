@@ -42,8 +42,5 @@
       "eslint --fix"
     ],
     "*.{json,js,css,md}": "prettier --write"
-  },
-  "dependencies": {
-    "@changesets/cli": "^2.26.1"
   }
 }
