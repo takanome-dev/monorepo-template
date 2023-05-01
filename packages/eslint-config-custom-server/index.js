@@ -35,6 +35,10 @@ module.exports = {
     'import/exports-last': 'error',
     'import/first': 'error',
     'import/newline-after-import': 'error',
+    'import/no-extraneous-dependencies': [
+      'error',
+      { devDependencies: true, peerDependencies: false },
+    ],
     'import/order': [
       'error',
       {
