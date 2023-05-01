@@ -2,7 +2,7 @@ name: CI
 
 on:
   pull_request:
-    branches: ['main']
+    branches: ['main', 'master']
   workflow_dispatch:
 
 # You can leverage Vercel Remote Caching with Turbo to speed up your builds
