@@ -1,5 +1,10 @@
 {
   "extends": "tsconfig/server.json",
-  "include": ["**/*.ts"],
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "baseUrl": "./src"
+  },
+  "include": ["src/**/*", "src/test/**/*"],
   "exclude": ["**/*.js", "**/*.json", "node_modules", ".turbo"]
 }

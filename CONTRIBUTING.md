@@ -7,19 +7,19 @@ Please read the [CODE of CONDUCT](CODE_OF_CONDUCT.md).
 
 First, fork the repository to your own account and run the following command:
 
-- Clone your repo: `git clone https://github.com/<your_name>/assign-to-me-action`
-- Change directory to the working dir: `cd assign-to-me-action`
-- Install the dependencies: `npm ci`
+- Clone your repo: `git clone https://github.com/<your_gh_name>/<the_repo_name>`
+- Change directory to the working dir: `cd <the_repo_name>`
+- Install the dependencies: `pnpm install`
 
 ## Issue
 
-If you see an open issue you would like to work on, just comment `/assign-to-me` and the action will assign the issue to you 😉
+If you see an open issue you would like to work on, just comment `.take` and the action will assign the issue to you 😉
 Issues that are not assigned are assumed open, and to avoid conflicts, please assign yourself before beginning work on any issues.
 
 > [!NOTE]
 > Assigned issues that have not had any activity in a week will be unassigned by the action.
 
-Next, use `git checkout -b <branch_name>` to create a new branch for your work. It's always a good idea to avoid committing changes directly to your `master` branch - this keeps it clean and avoid some weird issues.
+Next, use `git checkout -b <branch_name>` or `git switch -c <branch_name>` to create a new branch for your work. It's always a good idea to avoid committing changes directly to your default branch (master/main) - this keeps it clean and avoid some weird issues.
 
 Branch names should be a brief description of your changes, such as `fix-typo` for fixing a typo.
 
@@ -28,8 +28,13 @@ Branch names should be a brief description of your changes, such as `fix-typo` f
 
 ## Testing
 
-Before creating a PR, run this command: `npm run all`.
-It will format, lint, build and test everything.
+Before creating a PR, run the following commands to lint, build and test everything:
+
+```sh
+pnpm lint:fix
+pnpm build
+pnpm test
+```
 
 ## Pull Request
 
@@ -43,7 +48,7 @@ Make sure to change the PR title in something like: `fix: correct typo` or `feat
 
 ## Pull Request Reviews
 
-All pull requests require a review before being merged. Most reviews will come from [@takanome_dev](https://github.com/TAKANOME-DEV).
+All pull requests require a review before being merged. Most reviews will come from [@<maintainer_gh_name>](https://github.com/<maintainer_gh_name>).
 
 If your pull request is approved, it will be merged.
 

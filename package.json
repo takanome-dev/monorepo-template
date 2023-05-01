@@ -1,33 +1,39 @@
 {
   "name": "monorepo-template",
-  "version": "0.0.0",
+  "description": "Monorepo template with Next.js, NestJS, Tailwind CSS, Turbo, and Prettier",
+  "version": "1.0.0",
   "private": true,
+  "packageManager": "pnpm@8.3.1",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "workspaces": [
     "apps/*",
     "packages/*"
   ],
   "scripts": {
     "build": "turbo run build",
+    "clean": "git clean -xdf node_modules",
+    "clean:workspaces": "turbo run clean",
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
+    "lint:fix": "turbo run lint:fix",
+    "type-check": "turbo run type-check",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "prepare": "husky install"
   },
   "devDependencies": {
     "eslint": "^8.0.0",
     "eslint-config-custom": "workspace:*",
+    "eslint-config-custom-server": "workspace:*",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.2",
     "next": "13.3.1",
     "prettier": "latest",
+    "prettier-plugin-tailwindcss": "^0.1.11",
     "turbo": "latest",
     "typescript": "^5.0.0"
   },
-  "engines": {
-    "npm": ">=7.0.0",
-    "node": ">=14.0.0"
-  },
-  "dependencies": {},
   "lint-staged": {
     "apps/**/*.{js,ts,jsx,tsx}": [
       "eslint --fix"
@@ -36,6 +42,5 @@
       "eslint --fix"
     ],
     "*.{json,js,css,md}": "prettier --write"
-  },
-  "packageManager": "pnpm@8.3.1"
+  }
 }

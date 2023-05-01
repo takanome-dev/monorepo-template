@@ -1,8 +1,8 @@
 module.exports = {
-  ...require('eslint-config-custom/eslint-next'),
+  root: true,
+  extends: ['custom'],
+  parser: '@typescript-eslint/parser',
   parserOptions: {
-    root: true,
-    tsconfigRootDir: __dirname,
-    project: ['./tsconfig.json'],
+    project: './tsconfig.json',
   },
 };

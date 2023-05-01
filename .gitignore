@@ -13,6 +13,14 @@ coverage
 out/
 build
 
+# vercel
+.vercel
+
+# Nest.js
+dist/
+tsconfig.tsbuildinfo
+tsconfig.build.tsbuildinfo
+
 # misc
 .DS_Store
 *.pem
@@ -24,6 +32,7 @@ yarn-error.log*
 .pnpm-debug.log*
 
 # local env files
+.env
 .env.local
 .env.development.local
 .env.test.local
@@ -36,4 +45,4 @@ yarn-error.log*
 .dccache
 
 # vscode
-/.vscode
+.vscode/
