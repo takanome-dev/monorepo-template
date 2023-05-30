@@ -1,6 +1,8 @@
-# Turborepo starter with pnpm
+# Turborepo starter with PNPM
 
 <p align="center"><a href="https://github.com/takanome-dev/monorepo-template"><img alt="Licence Badge" src="https://img.shields.io/github/license/takanome-dev/monorepo-template?color=%2330C151"></a> <a href="https://github.com/takanome-dev/monorepo-template"><img alt="Release Badge" src="https://img.shields.io/github/release/takanome-dev/monorepo-template?color=%2330C151"></a> <a href="https://github.com/takanome-dev/monorepo-template"><img alt="CI" src="https://github.com/takanome-dev/monorepo-template/actions/workflows/ci.yml/badge.svg"></a> <a href="https://github.com/takanome-dev/monorepo-template"><img alt="CodeQL" src="https://github.com/takanome-dev/monorepo-template/actions/workflows/codeql-analysis.yml/badge.svg"></a></a></p>
+
+![monorepo-screenshot](https://github.com/takanome-dev/monorepo-template/assets/79809121/52a4fc35-2de1-48c4-bf4e-ed119103ced2)
 
 ## What's inside?
 
@@ -12,6 +14,7 @@ This turborepo uses [pnpm](https://pnpm.io) as a packages manager. It includes t
 - `server`: a [Nestjs](https://docs.nestjs.com) app
 - `ui`: a stub React component library shared between applications
 - `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
+- `eslint-config-custom-server`: `eslint` configurations for NestJS server
 - `tsconfig`: `tsconfig.json`s used throughout the monorepo
 
 Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
@@ -34,7 +37,7 @@ To build all apps and packages, run the following command:
 
 ```
 cd my-turborepo
-pnpm run build
+pnpm build
 ```
 
 ### Develop
@@ -43,7 +46,7 @@ To develop all apps and packages, run the following command:
 
 ```
 cd my-turborepo
-pnpm run dev
+pnpm dev
 ```
 
 ### Remote Caching
