@@ -1,4 +1,4 @@
-# Turborepo starter with PNPM
+<h1 align="center"> Turborepo starter with PNPM </h1>
 
 <p align="center"><a href="https://github.com/takanome-dev/monorepo-template"><img alt="Licence Badge" src="https://img.shields.io/github/license/takanome-dev/monorepo-template?color=%2330C151"></a> <a href="https://github.com/takanome-dev/monorepo-template"><img alt="Release Badge" src="https://img.shields.io/github/release/takanome-dev/monorepo-template?color=%2330C151"></a> <a href="https://github.com/takanome-dev/monorepo-template"><img alt="CI" src="https://github.com/takanome-dev/monorepo-template/actions/workflows/ci.yml/badge.svg"></a> <a href="https://github.com/takanome-dev/monorepo-template"><img alt="CodeQL" src="https://github.com/takanome-dev/monorepo-template/actions/workflows/codeql-analysis.yml/badge.svg"></a></a></p>
 
