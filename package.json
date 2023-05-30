@@ -3,7 +3,7 @@
   "description": "Monorepo template with Next.js, NestJS, Tailwind CSS, Turbo, and Prettier",
   "version": "1.0.0",
   "private": true,
-  "packageManager": "pnpm@8.4.0",
+  "packageManager": "pnpm@8.6.0",
   "engines": {
     "node": ">=18.0.0"
   },
@@ -28,7 +28,7 @@
     "eslint-config-custom-server": "workspace:*",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.2",
-    "next": "13.3.1",
+    "next": "13.4.4",
     "prettier": "latest",
     "prettier-plugin-tailwindcss": "^0.3.0",
     "turbo": "latest",
