@@ -18,13 +18,13 @@
     "ui": "workspace:*"
   },
   "devDependencies": {
-    "@types/node": "18.16.3",
-    "@types/react": "18.2.6",
+    "@types/node": "18.16.16",
+    "@types/react": "18.2.7",
     "@types/react-dom": "18.2.4",
     "autoprefixer": "10.4.14",
     "eslint-config-custom": "workspace:*",
     "eslint": "8.39.0",
-    "postcss": "8.4.23",
+    "postcss": "8.4.24",
     "tailwind-config": "workspace:*",
     "tailwindcss": "3.3.2",
     "tsconfig": "workspace:*",

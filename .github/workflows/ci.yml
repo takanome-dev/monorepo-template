@@ -52,7 +52,7 @@ jobs:
 
       - name: '📊 repository visualizer'
         id: diagram
-        uses: githubocto/repo-visualizer@0.8.2
+        uses: githubocto/repo-visualizer@0.9.1
         with:
           excluded_paths: 'node_modules,build,.vercel,.github,.husky'
           # output_file: 'public/diagram.svg'
@@ -60,7 +60,7 @@ jobs:
           root_path: ''
 
       - name: '📊 visualizer artifacts'
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: diagram
           path: diagram.svg
