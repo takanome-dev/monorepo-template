@@ -3,7 +3,7 @@
   "description": "Monorepo template with Next.js, NestJS, Tailwind CSS, Turbo, and Prettier",
   "version": "1.0.0",
   "private": true,
-  "packageManager": "pnpm@8.6.1",
+  "packageManager": "pnpm@8.6.2",
   "engines": {
     "node": ">=18.0.0"
   },
