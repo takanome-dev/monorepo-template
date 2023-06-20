@@ -28,7 +28,7 @@
     "eslint-config-custom-server": "workspace:*",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.2",
-    "next": "13.4.5",
+    "next": "13.4.6",
     "prettier": "latest",
     "prettier-plugin-tailwindcss": "^0.3.0",
     "turbo": "latest",
